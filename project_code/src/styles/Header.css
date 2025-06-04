@@ -1,0 +1,155 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 50px 10px 10px;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.search-container {
+  position: relative;
+  width: 38em;
+}
+
+.search-icon {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #64748b;
+  font-size: 1rem;
+  z-index: 1;
+}
+
+.bell-icon {
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #2563eb;
+  font-size: 1.2rem;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.search-bar {
+  width: 100%;
+  padding: 10px 48px;
+  border-radius: 12px;
+  border: 1px solid lightgrey;
+  font-size: 1rem;
+  position: relative;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.user-avatar {
+  width: 38px;
+  height: 38px;
+  border-radius: 20%;
+  background: #20c6c6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-plus {
+  color: darkblue;
+  width: 36px;
+  height: 36px;
+  border-radius: 12px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: none;
+}
+
+.menu-button {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  color: darkblue;
+  margin-right: 12px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px;
+}
+
+.menu-icon {
+  font-size: 1.5rem;
+}
+
+/* Responsive Breakpoints */
+/* Mobile (0-600px) */
+@media (max-width: 600px) {
+  .header {
+    padding: 10px;
+  }
+  
+  .search-container {
+    width: 100%;
+  }
+  
+  .search-bar {
+    padding: 8px 40px;
+  }
+  
+  .user-avatar {
+    width: 32px;
+    height: 32px;
+  }
+  
+  .header-actions {
+    gap: 12px;
+  }
+}
+
+/* Small Tablets (600-768px) */
+@media (min-width: 601px) and (max-width: 768px) {
+  .search-container {
+    width: 300px;
+  }
+}
+
+/* Large Tablets (768-992px) */
+@media (min-width: 769px) and (max-width: 992px) {
+  .search-container {
+    width: 400px;
+  }
+}
+
+/* Laptops (992-1200px) */
+@media (min-width: 993px) and (max-width: 1200px) {
+  .search-container {
+    width: 500px;
+  }
+}
+
+/* Desktops (1200px+) */
+@media (min-width: 1201px) {
+  .search-container {
+    width: 600px;
+  }
+  
+  .header {
+    padding: 10px 50px 10px 20px;
+  }
+}
+
+@media (min-width: 769px) {
+  .menu-button {
+    display: none;
+  }
+}

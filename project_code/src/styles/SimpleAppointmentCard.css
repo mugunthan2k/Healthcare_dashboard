@@ -1,0 +1,21 @@
+.simple-appointment-card {
+  background: #e6eefc;
+  border-radius: 14px;
+  padding: 12px 18px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 160px;
+  font-size: 1rem;
+}
+.appointment-icon {
+  font-size: 1.4rem;
+}
+.appointment-title {
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+.appointment-time {
+  color: #b0b8c9;
+  font-size: 0.98rem;
+}
